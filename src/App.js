@@ -62,6 +62,12 @@ export default () =>{
         <br/>Dados pegos do site Themoviedb.org
         <br/>Suporte por B7Web
       </footer>
+
+      {movieList.length <= 0 && 
+        <div className="loading">
+          <img style={{width: 800}}src="https://i0.wp.com/www.maggt.com/wp-content/uploads/2021/10/netflix-logo-animated.gif?fit=1000%2C568&ssl=1" alt="Carregando"/>
+        </div>
+      }
     </div>
   );
 }
